@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Prerequisites for a Rails + Hotwire tutorial
+$> ruby -v
+ruby 3.0.0p0 // you need at least version 3 here
 
-Things you may want to cover:
+$> bundle -v
+Bundler version 2.2.11
 
-* Ruby version
+$> npm -v
+8.3.0 // you need at least version 7.1 here
 
-* System dependencies
+$> yarn -v
+1.22.10
 
-* Configuration
+### Create Fresh new Rails project, from scratch
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+mkdir railshotwire && cd railshotwire 
+echo "source 'https://rubygems.org'" > Gemfile  
+echo "gem 'rails', '~> 7.0.0'" >> Gemfile  
+bundle install  
+bundle exec rails new . --force -d=postgresql 
